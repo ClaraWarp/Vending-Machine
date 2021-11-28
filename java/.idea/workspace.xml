@@ -28,7 +28,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="JUnit.All in m1-java-capstone-vending-machine">
+  <component name="RunManager" selected="Application.VendingMachineCLI">
     <configuration name="VendingMachineCLI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.techelevator.VendingMachineCLI" />
       <module name="m1-java-capstone-vending-machine" />
@@ -81,10 +81,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.VendingMachineCLI" />
         <item itemvalue="JUnit.All in m1-java-capstone-vending-machine" />
         <item itemvalue="JUnit.com.techelevator in m1-java-capstone-vending-machine" />
         <item itemvalue="JUnit.VendingMachineTest" />
-        <item itemvalue="Application.VendingMachineCLI" />
       </list>
     </recent_temporary>
   </component>

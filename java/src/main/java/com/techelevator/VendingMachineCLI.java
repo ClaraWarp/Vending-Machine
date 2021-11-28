@@ -29,6 +29,7 @@ public class VendingMachineCLI {
 		this.menu = menu;
 		this.vendingMachine = vendingMachine;
 		this.readerWriter = readerWriter;
+		this.menu.setVendingMachine(vendingMachine); // the menu keeps a var of the vending machine to access its cur balance
 	}
 
 	public void run() {
@@ -56,7 +57,7 @@ public class VendingMachineCLI {
 				}
 			}
 
-			// second menu shown and user choices condition
+			// second menu shown and user chooses condition
 			while (!menuSwitcher && looper) {
 				// this is the method from the first menu overloaded that passes the vending machine so it can read the money
 				String choice = (String) menu.getChoiceFromOptions(PURCHASE_MENU_OPTIONS, vendingMachine);
@@ -69,8 +70,9 @@ public class VendingMachineCLI {
 					boolean validFeed = feedString.equals("1") || feedString.equals("2") || feedString.equals("5") || feedString.equals("10") || feedString.equals("20");
 					if (validFeed) {
 						vendingMachine.putMoneyInMachine(BigDecimal.valueOf(Integer.parseInt(feedString)));
-						menu.setVendingMachine(vendingMachine); // the menu prints out money in the machine so this updates it
 						readerWriter.addToLog("FEED MONEY: ", BigDecimal.valueOf(Integer.parseInt(feedString)), vendingMachine.getMoneyInMachine());
+					} else {
+						System.out.println("*ERROR* AMOUNT NOT ALLOWED!");
 					}
 				}
 
