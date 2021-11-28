@@ -8,6 +8,8 @@ import java.math.BigDecimal;
 
 public class VendingMachineTest {
 
+    // Was not able to fill out unit tests for this capstone given time restraint, but here is an example test.
+
     @Test
     public void put_Money_In_Machine_works_with_valid_data_should_return_expected_results() {
         ReaderWriter readerWriter = new ReaderWriter();
